@@ -1,0 +1,33 @@
+:root {
+    --primary-color: #da2c38ff;
+    --secondary-color: #226f54ff;
+    --secondary-alt: #87c38fff;
+    --accent1: #f4f0bbff;
+    --accent2: #43291fff;
+
+    --heading-font: 'Merriweather', sans-serif;
+    --body-font: 'Source Sans 3', sans-serif;
+}
+
+header {
+    height: 100px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    font-family: var(--heading-font);
+    justify-content: center;
+    gap: 30px;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
