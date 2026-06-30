@@ -4,6 +4,7 @@
     --secondary-alt: #87c38fff;
     --accent1: #f4f0bbff;
     --accent2: #43291fff;
+    --background-color: rgb(85, 85, 85);
 
     --heading-font: 'Merriweather', sans-serif;
     --body-font: 'Source Sans 3', sans-serif;
@@ -25,11 +26,58 @@ nav {
 }
 
 #logo {
-    max-width: 70px;
+    max-width: 90px;
 }
 
 body {
     font-family: var(--body-font);
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);
+}
+
+.hero {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+}
+
+.career-paths-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    width: 80%;
+}
+
+.career-card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--primary-color);
+}
+
+.career-card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.career-info {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer img {
+    max-width: 50px;
 }
