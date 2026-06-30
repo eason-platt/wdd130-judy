@@ -14,6 +14,7 @@ header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
+    background-color: #cfcac4;
 }
 
 nav {
@@ -23,11 +24,12 @@ nav {
     gap: 30px;
 }
 
-body {
-    font-family: var(--body-font);
+#logo {
+    max-width: 70px;
 }
 
-footer {
-    display: flex;
-    align-items: center;
+body {
+    font-family: var(--body-font);
+    margin: 0;
+    padding: 0;
 }
