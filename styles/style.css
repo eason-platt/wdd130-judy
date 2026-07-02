@@ -15,7 +15,7 @@ header {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
-    background-color: #cfcac4;
+    background-color: var(--background-color);
 }
 
 nav {
@@ -23,10 +23,17 @@ nav {
     font-family: var(--heading-font);
     justify-content: center;
     gap: 30px;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #logo {
-    max-width: 90px;
+    max-width: 80px;
+    margin: 10px;
 }
 
 body {
@@ -47,6 +54,19 @@ body {
     height: 100%;
     object-fit: cover;
     object-position: center top;
+}
+
+.hero-text {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
 }
 
 .career-paths-grid {
