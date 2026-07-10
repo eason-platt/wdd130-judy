@@ -12,16 +12,18 @@
 
 header {
     height: 100px;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
+    position: relative;
     align-items: center;
     background-color: var(--background-color);
 }
 
 nav {
     display: flex;
+    position: absolute;
     font-family: var(--heading-font);
-    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
     gap: 30px;
     color: white;
 }
@@ -41,6 +43,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--background-color);
+    color: white;
 }
 
 .hero {
@@ -62,6 +65,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    color: black;
 }
 
 main {
@@ -69,11 +73,18 @@ main {
     justify-content: center;
 }
 
+.description-card {
+    margin: 30px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 15px;
+}
+
 .career-paths-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-
+    gap: 60px;
+    margin-bottom: 30px;
     width: 80%;
 }
 
@@ -89,6 +100,10 @@ main {
     object-fit: cover;
 }
 
+.career-card button {
+    margin: 10px;
+}
+
 .career-info {
     text-align: center;
 }
@@ -96,6 +111,23 @@ main {
 footer {
     background-color: black;
     color: white;
+    padding: 30px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 footer img {
