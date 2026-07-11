@@ -90,6 +90,7 @@ main {
 
 .career-card {
     border-radius: 20px;
+    border: 5px solid var(--primary-color) ;
     overflow: hidden;
     background-color: var(--primary-color);
 }
@@ -108,6 +109,13 @@ main {
     text-align: center;
 }
 
+.career-card button {
+    border-radius: 50px;
+    font-size: 1.1rem;
+    color: white;
+    background-color: var(--background-color);
+}
+
 footer {
     background-color: black;
     color: white;
@@ -119,17 +127,28 @@ footer {
 }
 
 .footer-links {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    margin-top: 50px;
 }
 
 .socials {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
+    margin-top: 50px;
 }
 
-footer img {
-    max-width: 50px;
+.facebook-logo {
+    width: 50px;
+}
+
+.x-logo {
+    width: 40px;
+    transform: translateY(5px);
+}
+
+.linkedin-logo {
+    width: 50px;
 }
