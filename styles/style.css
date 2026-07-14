@@ -152,3 +152,33 @@ footer {
 .linkedin-logo {
     width: 50px;
 }
+
+#resources_main {
+    display: grid;
+    padding-bottom: 10px;
+}
+
+#resume-resources {
+    justify-self: center;
+}
+
+#resume-resources a {
+    text-decoration: none;
+    font-size: large;
+    background-color: #226f54ff;
+    color: #f4f0bbff;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#resume-resources a:hover {
+    background-color: #da2c38ff;
+}
+
+#interview-prep {
+    display: grid;
+}
+
+#end_line {
+    justify-self: center;
+}
