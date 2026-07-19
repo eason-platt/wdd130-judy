@@ -182,3 +182,19 @@ footer {
 #end_line {
     justify-self: center;
 }
+
+.careers-main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.careers-main h2 {
+    text-align: center;
+}
+
+.careers-main .career-card {
+    padding: 10px;
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
